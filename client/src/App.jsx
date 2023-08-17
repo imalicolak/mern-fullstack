@@ -5,10 +5,12 @@ import About from './pages/About'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import Profile from './pages/Profile'
+import Navbar from './components/Navbar'
 
 export default function App() {
 	return (
 		<BrowserRouter className=''>
+			<Navbar />
 			<Routes>
 				<Route
 					path='/'

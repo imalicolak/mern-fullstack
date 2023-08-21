@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 	return (
-		<div className='bg-slate-200 lg:w-[35%] md:w-[50%] sm:w-[70%] xs:w-full xs:rounded-none rounded-3xl mx-auto drop-shadow-xl mt-4 xs:mt-0 '>
+		<div className='bg-cyan-200 lg:w-[40%] md:w-[50%] sm:w-[70%] xs:w-[90%] xs:rounded-none rounded-3xl mx-auto drop-shadow-xl mt-4 xs:mt-0  '>
 			<div className='flex justify-between items-center  max-w-2xl mx-auto p-4 '>
 				<Link to='/'>
 					<h1 className=' '>

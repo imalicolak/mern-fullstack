@@ -18,16 +18,21 @@ const Navbar = () => {
 					<Link to='about'>
 						<li>About</li>
 					</Link>
-					<Link to='sign-in'>
-						<li className='bg-blue-300 p-3 rounded-full'>
-							Sign-in
-						</li>
+					<Link to='about'>
+						<li>Pricing</li>
 					</Link>
-					<Link to='sign-up'>
-						<li className='bg-blue-300 p-3 rounded-full'>
-							Sign-up
-						</li>
-					</Link>
+					<div className='flex ml-10 gap-3 items-center justify-center'>
+						<Link to='sign-in'>
+							<li className='justify-center items-center bg-blue-300 p-3 px-6 rounded-full'>
+								Sign-in
+							</li>
+						</Link>
+						<Link to='sign-up'>
+							<li className='justify-center items-center bg-blue-300 p-3 px-6 rounded-full'>
+								Sign-up
+							</li>
+						</Link>
+					</div>
 				</ul>
 			</div>
 		</div>

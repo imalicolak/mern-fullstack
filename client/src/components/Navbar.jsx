@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// COLORS: BLACK: #151816, MAIN PURPLE: #7f1266, ACCENT PURPLE: #ee82ee,
+
 const Navbar = () => {
 	return (
-		<div className='bg-cyan-200 w-[90%] lg:w-[85%] md:w-[80%] sm:w-[75%] rounded-full mx-auto  mt-4  '>
-			<div className='flex justify-evenly items-center gap-2 lg:p-4 md:p-4 sm:p-4 max-w-2xl mx-auto p-4 sticky '>
+		<div className='bg-[#7f1266] rounded-xl px-6 mt-3 max-w-2xl min-w-xl mx-auto   '>
+			<div className='text-white flex justify-between items-center gap-2 lg:p-4 md:p-4 sm:p-3 p-4 sticky '>
 				<Link to='/'>
 					<h1 className=' '>
 						MERN
@@ -21,14 +23,14 @@ const Navbar = () => {
 					<Link to='about'>
 						<li>Pricing</li>
 					</Link>
-					<div className='flex ml-10 gap-3 items-center justify-center'>
+					<div className='text-[#151816] font-semibold flex ml-10 gap-3 items-center justify-center'>
 						<Link to='sign-in'>
-							<li className='justify-center items-center bg-blue-300 p-3 px-6 rounded-full'>
+							<li className='justify-center items-center bg-[#ffa500] p-3 px-6 rounded-xl'>
 								Sign-in
 							</li>
 						</Link>
 						<Link to='sign-up'>
-							<li className='justify-center items-center bg-blue-300 p-3 px-6 rounded-full'>
+							<li className='justify-center items-center bg-[#ee82ee] p-3 px-6 rounded-xl'>
 								Sign-up
 							</li>
 						</Link>

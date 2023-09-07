@@ -9,30 +9,34 @@ import Navbar from './components/Navbar'
 
 export default function App() {
 	return (
-		<BrowserRouter className=''>
-			<Navbar />
-			<Routes>
-				<Route
-					path='/'
-					element={<Home />}
-				/>
-				<Route
-					path='/about'
-					element={<About />}
-				/>
-				<Route
-					path='/sign-in'
-					element={<Signin />}
-				/>
-				<Route
-					path='/sign-up'
-					element={<Signup />}
-				/>
-				<Route
-					path='/profile'
-					element={<Profile />}
-				/>
-			</Routes>
-		</BrowserRouter>
+		<div className='bg-[#141414] min-h-screen'>
+			<BrowserRouter>
+				<Navbar />
+				<div className='p-4'>
+					<Routes>
+						<Route
+							path='/'
+							element={<Home />}
+						/>
+						<Route
+							path='/about'
+							element={<About />}
+						/>
+						<Route
+							path='/sign-in'
+							element={<Signin />}
+						/>
+						<Route
+							path='/sign-up'
+							element={<Signup />}
+						/>
+						<Route
+							path='/profile'
+							element={<Profile />}
+						/>
+					</Routes>
+				</div>
+			</BrowserRouter>
+		</div>
 	)
 }

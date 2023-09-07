@@ -27,7 +27,7 @@ const app = express()
 // ALLOW JSON INPUT FOR BACKEND
 app.use(express.json())
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
 	console.log('The Server is running on port', PORT, '🔥🎁🟢!')
 })
